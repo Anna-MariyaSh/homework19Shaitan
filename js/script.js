@@ -63,22 +63,25 @@
 //
 // console.log(newArr);
 //task 10
-// arr =  [[1, 2, 3], [4, 5], [6]];
-// let sum = 0;
-// for (let i = 0; i < arr.length; i++) {
-// 	for (let j = 0; j < arr[i].length; j++) {
-// 		sum += arr[i][j];
-// 	}
+// array =  [[1, 2, 3], [4, 5], [6]];
+// function sumNum(arr) {
+//   let sum = 0;
+//   let arr1 = arr.flat();
+//   for (let i = 0; i < arr1.length; i++) {
+//   	sum += arr1[i];
+//   }
+//   return sum;
 // }
-// console.log(sum);
+// console.log(sumNum(array));
+
 //task 11
-// arr = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
-// let sum = 0;
-// for (let i = 0; i < arr.length; i++) {
-// 	for (let j = 0; j < arr[i].length; j++) {
-//     for (let y = 0; y < arr[i][j].length; y++) {
-//       sum += arr[i][j][y];
-//     }
-// 	}
-// }
-// console.log(sum);
+ array = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
+ function sumNum(arr) {
+   let sum = 0;
+   let arrUp = arr.flat().flat();
+   for (let i = 0; i < arrUp.length; i++) {
+   	sum += arrUp[i];
+   }
+   return sum;
+ }
+ console.log(sumNum(array));
